@@ -1,0 +1,214 @@
+/* form-box外观  */
+.form-box {
+	display: inline-block;
+	width: 278px;
+	font-family: "微软雅黑", arial, helvetica, sans-serif;
+}
+.form-hd .form-hd-tit {
+	position: relative;
+	margin: 0 auto 60px; 
+	font: normal 36px/1.33333 "微软雅黑";
+	color: #fff;
+}
+.form-hd .form-hd-tit::after {
+	content: "2017";
+	position: absolute;
+	margin-left: 6px;
+	font-size: 14px;	
+}
+.form-bd {
+	position: relative;
+	padding: 42px 16px 16px;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(20,20,20,.2);
+}
+.form-bd::after {
+	content: '';
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	margin-left: -40px;
+	top: -40px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: inset 0 -2px 2px rgba(20,20,20,.2);
+	background: #58c0b0 url(../../img/logo2.png) no-repeat center center;
+}
+
+.x-form {
+	padding-bottom: 10px;
+	width: 244px;
+	border-bottom: 1px dashed #e5e5e5;
+}
+.x-form input {
+    display: inline-block;
+}
+.x-form input[type="text"],
+.x-form input[type="password"],
+.x-form input[type="email"],
+.x-form input[type="url"],
+.x-form input[type="date"],
+.x-form input[type="month"],
+.x-form input[type="time"],
+.x-form input[type="datetime"],
+.x-form input[type="datetime-local"],
+.x-form input[type="week"],
+.x-form input[type="number"],
+.x-form input[type="search"],
+.x-form input[type="tel"],
+.x-form input[type="color"],
+.x-form select,
+.x-form textarea,
+.x-form button {
+    margin: 7px auto;
+    width: 160px;
+    height: 1.8rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-indent: 6px;
+    color: #bbbcb9;
+    background-color: #eee;
+}
+.x-form input[type="text"].vcode {
+	width: 80px;
+}
+.x-form .code {
+	display: inline-block;
+	width: 80px;
+	font: 16px/1.75;
+	font-weight: bold;
+	color: #eb6100;
+	text-align:　center;
+	cursor: pointer;
+}
+.x-form .submit-btn {
+	color: #fff;
+	background-color: #58c0b0;
+	cursor: pointer;
+}
+.x-form .submit-btn:hover {
+	color: #fff;
+	background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* 为了解决ie8不计算css3选择器的问题 */
+.x-form input:not([type]) {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.x-form input[type="text"]:focus,
+.x-form input[type="password"]:focus,
+.x-form input[type="email"]:focus,
+.x-form input[type="url"]:focus,
+.x-form input[type="date"]:focus,
+.x-form input[type="month"]:focus,
+.x-form input[type="time"]:focus,
+.x-form input[type="datetime"]:focus,
+.x-form input[type="datetime-local"]:focus,
+.x-form input[type="week"]:focus,
+.x-form input[type="number"]:focus,
+.x-form input[type="search"]:focus,
+.x-form input[type="tel"]:focus,
+.x-form input[type="color"]:focus,
+.x-form select:focus,
+.x-form textarea:focus {
+    outline: 0;
+    border-color: #129FEA;
+    color: #000;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.x-form input:not([type]):focus {
+    outline: 0;
+    border-color: #129FEA;
+}
+
+/*.x-form input[type="file"]:focus,
+.x-form input[type="radio"]:focus,
+.x-form input[type="checkbox"]:focus {
+    outline: thin solid #129FEA;
+    outline: 1px auto #129FEA;
+}*/
+
+/*.x-form input[type="text"][disabled],
+.x-form input[type="password"][disabled],
+.x-form input[type="email"][disabled],
+.x-form input[type="url"][disabled],
+.x-form input[type="date"][disabled],
+.x-form input[type="month"][disabled],
+.x-form input[type="time"][disabled],
+.x-form input[type="datetime"][disabled],
+.x-form input[type="datetime-local"][disabled],
+.x-form input[type="week"][disabled],
+.x-form input[type="number"][disabled],
+.x-form input[type="search"][disabled],
+.x-form input[type="tel"][disabled],
+.x-form input[type="color"][disabled],
+.x-form select[disabled],
+.x-form textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}*/
+
+.x-form input:focus:invalid,
+.x-form textarea:focus:invalid,
+.x-form select:focus:invalid {
+    color: #b94a48;
+    border-color: #e9322d;
+}
+/*.x-form input[type="file"]:focus:invalid:focus,
+.x-form input[type="radio"]:focus:invalid:focus,
+.x-form input[type="checkbox"]:focus:invalid:focus {
+    outline-color: #e9322d;
+}*/
+.x-form select {
+    /* Normalizes the height; padding is not sufficient. */
+    height: 2.25em;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.form-toggle {
+	font-size: 12px;
+	line-height: 2.5em;
+}
+.form-toggle a:last-child {
+	margin-left: 20px;
+}
+
+/* 登录表单  */
+.form-bd{
+	position: absolute;
+	opacity: 0;
+	transform: translateY(-2000px);
+    /*display: none;*/
+		
+}
+.form-bd:target {
+	/*display: block;*/
+	opacity: 1;
+	transform: translateY(0);
+	transition: transform .6s ease, opacity .8s ease .3s;
+}
+
+

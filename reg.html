@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>众学智库登录注册页面</title>
+		<meta name="description" content="众学智库致力于..." />
+		<meta name="keyword" content="众学之约，项目，职业导航，成长" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
+    	<link rel="stylesheet" href="css/icon/style.css" />
+    	<link rel="stylesheet" href="css/module/form.css" />
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	      <!--[if lt IE 9]>
+	        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	      <![endif]-->
+	    <style>
+	    	body {
+	    		margin: 0;
+	    		height: 100vh;
+	    		background: #58c0b0 linear-gradient(#58c0b0,#fff) no-repeat;
+	    	}
+	    	.container {
+	    		padding-top: 92px;
+	    		text-align: center;
+	    	}
+	    	a{
+				color: #777;
+				text-decoration: none;
+				background-color:transparent
+			}
+			a:active,
+			a:hover{
+				outline:0
+			}
+	    </style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-box">
+				<div class="form-hd">
+					<h1 class="form-hd-tit">众学智库</h1>
+				</div>
+				<div class="form-bd reg-form" id="reg_form">
+						<form action="" class="x-form">
+						<input type="text" class="username" placeholder="请输入手机号" required />
+						<select name="school" id="school">
+							<option value="1">武汉科技大学</option>
+							<option value="2">华中科技大学</option>
+							<option value="2">武汉理工大学</option>
+						</select>
+						<input type="password" class="psw" placeholder="请输入密码" required />
+						<input type="password" class="psw" placeholder="请再次输入密码" required />			
+						<input type="text" class="vcode" placeholder="验证码" required /><span class="code">XZZK</span>
+						<button type="submit" class="submit-btn">注册</button>
+					</form>
+					<div class="form-toggle">
+						<a href="index.html"><i class="icon-arrow-left"></i>返回首页</a>
+						<a href="#login_form">登录</a>
+					</div>
+					
+				</div>
+				<!-- 登录页面  -->
+				<div class="form-bd login-form" id="login_form">
+						<form action="" class="x-form">
+						<input type="text" class="username" placeholder="请输入手机号" required />
+						<input type="password" class="psw" placeholder="请输入密码" required />		
+						<input type="text" class="vcode" placeholder="验证码" required /><span class="code">XZZK</span>
+						<button type="submit" class="submit-btn">登录</button>
+					</form>
+					<div class="form-toggle">
+						<a href="#reg_form"><i class="icon-arrow-left"></i>注册</a>
+						<a href="#">忘记密码？</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

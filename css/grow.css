@@ -1,0 +1,84 @@
+/* banner可单独做成一个模块 */
+.banner { 
+	position: relative;
+	margin-top: 65px;
+	overflow: auto; 
+	text-align: center;
+}
+.banner-bg {
+	max-width: 100%;
+	height: 528px;
+	background: url(../img/grow/grow_banner.jpg) no-repeat center center;
+}
+/* 内容 */
+.grow-term {
+	margin-top: 40px;
+}
+.grow-term .grow-term-hd {
+	margin-bottom: -2em;
+	text-align: center;
+}
+.grow-term .grow-term-hd .grow-time {
+	font-size: 2em;
+	line-height: 120%;
+	color: #77931b;
+}
+.grow-term .grow-item {
+	padding: 0 16px 16px;
+	margin-bottom: 18px;
+	display: inline-block;
+	float: left;
+	max-width: 512px;
+	text-align: right;
+	font-size: 12px;
+	font-family: "新宋体";
+	box-shadow: 0 2px 6px rgba(20,20,20,.1);
+	background-color: #f5f2e2;
+}
+.grow-term .grow-item:nth-child(2n+1) {
+	float: right;
+}
+.grow-item .grow-item-intro,
+.grow-item .grow-item-img {
+	display: inline-block;
+}
+.grow-item .grow-item-intro {
+	max-width: 36%;
+	margin-right: 3.99999%;
+	vertical-align: top;
+}
+.grow-item .grow-item-intro > h2 {
+	margin-bottom: 0;
+	font: bold 22px/2.2 "新宋体";
+}
+.grow-item .grow-item-intro > p {
+	text-indent: 2em;
+	text-align: left;
+	line-height: 1.8;
+	color: #b3a48a;
+}
+.grow-item .grow-item-img {
+	max-width: 60%;
+}
+.grow-item .author-box,
+.grow-item .author-word {
+	display: block;
+}
+.grow-item .author-box {
+	padding: 8px 14px;
+	color: #ece7cc;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #d0c795;
+}
+.grow-item .author-word {
+	padding-top: 2em;
+	color: #b3a48a;
+}
+/* 广告  */
+.index-ad .bg-link {
+	margin-bottom: 18px;
+	display: block;
+	height: 194px;
+	background: url(../img/grow/grow_ad.jpg) no-repeat center center;
+}

@@ -1,0 +1,173 @@
+/* header */
+.header {
+	position: absolute;
+	z-index: 999;
+	height: 52px;
+	width: 100%;
+    overflow: hidden;
+    background-color: #fefffc;
+    box-shadow: 3px 0 8px rgba(0,0,0,.2);
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+/* header展开的高度 */  
+.header.open {
+    height: 33em;
+}
+
+/* 菜单logo类---左  */
+.hd-left-wrap {
+	margin-top: 8px;
+}
+.logo-bar {
+    box-sizing: border-box;
+}
+
+/* 切换按钮  */  
+.menu-toggle {
+	margin-top: 9px;
+  	width: 34px;
+  	height: 34px;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	display: none;
+}  
+.menu-toggle .bar {
+  background-color: #777;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+  
+.menu-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+  
+.menu-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	      
+.menu-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* 小屏幕时显示  */
+@media (max-width: 70em) {  
+  .menu-toggle {
+      display: block;
+  }
+  .main-nav .nav-link,
+  .nav-right .nav-link {
+  	border-bottom: 1px solid #e3e2e2;
+  	text-align: left;
+  }
+  .nav-right .nav-link:last-child {
+  	border-bottom: none;
+  }
+   
+}
+@media (min-width: 48em) and (max-width: 70em) {
+	.md-hidden {
+		display: none;
+	}
+	.header.open .md-hidden {
+		display: block;
+	}
+	/* 解决中小尺寸下布局问题 ---待改善 */
+	.x-u-md-7-24 {
+		display : block;
+		margin-left: 25%;
+		width:45.8333%;
+		*width:45.8023%
+	}
+}
+
+/* 菜单logo类---end  */
+
+/* 主导航---main-nav  */
+.hd-main-wrap {
+	line-height: 48.7px;
+    width: 100%;
+    white-space: nowrap;
+}
+.hd-main-wrap.horizontal .main-nav,
+.hd-main-wrap.horizontal .nav-item,
+.nav-right.horizontal .nav-link {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.hd-main-wrap.horizontal .main-nav .nav-link {
+    margin-right: 28px;
+	width: 76px;
+	border-bottom: 3px solid transparent;
+	text-align: center;
+	/*color: #777;*/
+}
+.hd-main-wrap.horizontal .main-nav .active {
+	border-bottom: 3px solid #777;
+}
+
+.main-nav,
+.main-nav .nav-item {
+    vertical-align: middle;
+    list-style: none;
+}
+.main-nav {
+	padding-left: 0;
+}
+.main-nav .nav-link,
+.logo-bar .brand,
+.nav-right .nav-link {
+    display: block;
+    white-space: nowrap;
+}
+
+.main-nav > .nav-item:last-child > .nav-link {
+	margin-right: 0;
+}
+
+/* 主导航---end  */
+
+/* 右导航---right-nav */
+.nav-right {
+	position: relative;
+	text-align: right;
+	font-size: 12px;
+	line-height: 52px;
+} 
+.nav-right .nav-link {
+	margin-right: 20px;
+}
+.nav-right .nav-link:last-child {
+	margin-right: 0;
+}
+/* 右导航---end */
+
+
+

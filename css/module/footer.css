@@ -1,0 +1,19 @@
+.footer {
+	padding-left: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #333;
+	font-size: 12px;
+	color: #d2d2d2;
+}
+.about-link {
+	padding-right: 17px;
+	padding-left: 17px;
+	color: #bbbcb9;
+}
+.about-link:hover {
+	text-decoration: underline;
+}
+.copyright {
+	text-align: right;
+}

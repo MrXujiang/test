@@ -1,0 +1,92 @@
+/* banner可单独做成一个模块 */
+.banner { 
+	position: relative;
+	margin-top: 65px;
+	overflow: auto; 
+	text-align: center;
+}
+
+/* 导航 */
+.chat-nav {
+	padding: 16px;
+	height: 1em;
+	background-color: rgb(253,252,252);
+}
+.chat-nav .left-nav {
+	float: left;
+}
+.chat-nav .right-nav {
+	float: right;
+}
+.chat-nav .left-nav > a,
+.chat-nav .right-nav > a {
+	display: inline-block;
+	color: #777;
+}
+.chat-nav .left-nav > a {
+	margin-right: 32px;
+}
+.chat-nav .left-nav > a:last-child {
+	margin-right: 0;
+}
+.chat-nav .right-nav > a {
+	margin-left: 32px;
+}
+.chat-nav .right-nav > a:first-child {
+	margin-left: 0;
+}
+.chat-nav .left-nav > a:first-child,
+.chat-nav .right-nav > a:first-child {
+	color: #03a296;
+}
+
+/* 项目单元  */
+.chat-item {
+	margin-top: 18px;
+	padding: 24px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	background-color: rgb(253,252,252);
+}
+.chat-item:last-child {
+	margin-bottom: 18px;
+}
+.chat-item .left-img,
+.chat-item .right-content {
+	display: inline-block;
+}
+.chat-item .left-img {
+	max-width: 38%;
+	text-align: center;
+}
+.chat-item .right-content {
+	max-width: 59.5%;
+	margin-left: 2.4%;
+	vertical-align: top;
+}
+.chat-item .right-content h2 {
+	margin: 28px auto;
+	color: #090d13;
+	font-size: 30px;
+	line-height: 100%;
+	font-weight: normal;
+}
+.chat-item .right-content p {
+	margin: 0;
+	line-height: 2.33333;
+	color: #bdbdbc;
+}
+.chat-detail {
+	padding-top: 16px;
+}
+.btn-wrap {
+	padding-top: 24px;
+}
+
+/* 广告  */
+.index-ad .bg-link {
+	margin-bottom: 18px;
+	display: block;
+	height: 194px;
+	background: url(../img/chat/chat_ad.jpg) no-repeat center center;
+}
